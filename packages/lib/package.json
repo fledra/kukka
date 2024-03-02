@@ -1,0 +1,25 @@
+{
+  "name": "@kukka/lib",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "GPL-3.0-only",
+  "author": "Baran D. <baran@fledra.dev> (https://fledra.dev)",
+  "private": true,
+  "types": "./dist/kukka.lib.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/kukka.lib.js",
+      "require": "./dist/kukka.lib.cjs"
+    }
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "tsc-files": "^1.1.4",
+    "vite": "^5.1.4",
+    "vite-plugin-dts": "^3.7.3"
+  }
+}

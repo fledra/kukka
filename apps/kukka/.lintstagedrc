@@ -1,0 +1,4 @@
+{
+  "**/*.{vue,ts,js}": ["eslint --cache --fix", "prettier --write", "nuxi typecheck --cwd ."],
+  "**/*.{css,scss}": ["stylelint --fix", "prettier --write"]
+}

@@ -1,0 +1,40 @@
+# compiled
+node_modules
+dist
+dist-ssr
+tmp
+
+# IDEs and editors
+.c9
+.idea
+.settings
+.project
+.classpath
+*.launch
+*.sublime-workspace
+
+# except VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+.eslintcache
+.sass-cache
+coverage
+typings
+.DS_Store
+.fleet
+.idea
+Thumbs.db
+
+# logs
+logs
+*.log
+
+# env files
+.env
+.env.*
+!.env.example
