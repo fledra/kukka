@@ -1,0 +1,59 @@
+@mixin margin-x($value: 1rem) {
+  margin-left: $value;
+  margin-right: $value;
+}
+
+@mixin margin-y($value: 1rem) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+
+@mixin margin-tl($value: 1rem) {
+  margin-top: $value;
+  margin-left: $value;
+}
+
+@mixin margin-tr($value: 1rem) {
+  margin-top: $value;
+  margin-right: $value;
+}
+
+@mixin margin-bl($value: 1rem) {
+  margin-bottom: $value;
+  margin-left: $value;
+}
+
+@mixin margin-br($value: 1rem) {
+  margin-bottom: $value;
+  margin-right: $value;
+}
+
+@mixin padding-x($value: 1rem) {
+  padding-left: $value;
+  padding-right: $value;
+}
+
+@mixin padding-y($value: 1rem) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+
+@mixin padding-tl($value: 1rem) {
+  padding-top: $value;
+  padding-left: $value;
+}
+
+@mixin padding-tr($value: 1rem) {
+  padding-top: $value;
+  padding-right: $value;
+}
+
+@mixin padding-bl($value: 1rem) {
+  padding-bottom: $value;
+  padding-left: $value;
+}
+
+@mixin padding-br($value: 1rem) {
+  padding-bottom: $value;
+  padding-right: $value;
+}

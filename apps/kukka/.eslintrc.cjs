@@ -4,5 +4,7 @@ module.exports = {
   root: true,
   extends: ['@nuxt/eslint-config', 'plugin:prettier/recommended'],
   overrides: [],
-  rules: {},
+  rules: {
+    'vue/multi-word-component-names': 'off',
+  },
 };

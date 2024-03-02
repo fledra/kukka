@@ -1,0 +1,52 @@
+@use 'sass:map';
+@use 'vuetify/settings' as v;
+
+@mixin on-media($breakpoint) {
+  @media #{map-get(v.$display-breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin on-medias($breakpoints: ()) {
+  @each $breakpoint in $breakpoints {
+    @media #{map-get($media-queries, $breakpoint)} {
+      @content;
+    }
+  }
+}
+
+@mixin on-xs {
+  @include on-media('xs') {
+    @content;
+  }
+}
+
+@mixin on-sm {
+  @include on-media('sm') {
+    @content;
+  }
+}
+
+@mixin on-md {
+  @include on-media('md') {
+    @content;
+  }
+}
+
+@mixin on-lg {
+  @include on-media('lg') {
+    @content;
+  }
+}
+
+@mixin on-xl {
+  @include on-media('xl') {
+    @content;
+  }
+}
+
+@mixin on-xxl {
+  @include on-media('xxl') {
+    @content;
+  }
+}
