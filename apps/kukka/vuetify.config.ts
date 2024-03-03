@@ -23,9 +23,6 @@ export default defineVuetifyConfiguration({
           info: '#98c6dd',
           error: '#f36868',
         },
-        variables: {
-          'layout-left': '300px',
-        },
       },
     },
   },

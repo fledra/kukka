@@ -15,6 +15,10 @@ export default defineNuxtConfig({
     autoImport: true,
   },
 
+  features: {
+    inlineStyles: false,
+  },
+
   typescript: {
     strict: true,
     typeCheck: true,
@@ -30,7 +34,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "~/assets/styles/main.scss";',
+          additionalData: '@use "@/assets/styles/main" as *;',
         },
       },
     },
@@ -41,6 +45,9 @@ export default defineNuxtConfig({
   vuetify: {
     moduleOptions: {
       prefixComposables: true,
+      styles: {
+        configFile: 'assets/styles/settings.scss',
+      },
     },
   },
 

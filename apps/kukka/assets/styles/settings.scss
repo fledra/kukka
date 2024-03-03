@@ -1,0 +1,10 @@
+@use './variables';
+
+// Vuetify module does not load vuetify styles along with it's configFile option
+// so just use the whole vuetify styles with it's configuration. Duplicates styles
+// in dev but loads only once in prod so...
+
+@use 'vuetify' with (
+  $color-pack: false,
+  $body-font-family: variables.$font-family
+);

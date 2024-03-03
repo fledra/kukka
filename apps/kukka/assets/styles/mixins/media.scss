@@ -1,17 +1,9 @@
 @use 'sass:map';
-@use 'vuetify/settings' as v;
+@use '@/assets/styles/variables';
 
 @mixin on-media($breakpoint) {
-  @media #{map-get(v.$display-breakpoints, $breakpoint)} {
+  @media #{map.get(variables.$display-breakpoints, $breakpoint)} {
     @content;
-  }
-}
-
-@mixin on-medias($breakpoints: ()) {
-  @each $breakpoint in $breakpoints {
-    @media #{map-get($media-queries, $breakpoint)} {
-      @content;
-    }
   }
 }
 
