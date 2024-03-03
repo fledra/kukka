@@ -35,11 +35,19 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ['vuetify-nuxt-module', 'nuxt-icon'],
+
+  modules: ['vuetify-nuxt-module', 'nuxt-icon', '@nuxtjs/google-fonts'],
 
   vuetify: {
     moduleOptions: {
       prefixComposables: true,
+    },
+  },
+
+  googleFonts: {
+    preload: true,
+    families: {
+      Poppins: [100, 300, 400, 500, 700, 900],
     },
   },
 });
