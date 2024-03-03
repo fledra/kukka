@@ -1,4 +1,7 @@
 {
   "extends": ["stylelint-config-standard-scss", "stylelint-config-standard-vue/scss"],
-  "rules": {}
+  "rules": {
+    "at-rule-empty-line-before": null,
+    "scss/dollar-variable-empty-line-before": null
+  }
 }
