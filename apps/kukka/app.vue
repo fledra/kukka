@@ -2,6 +2,7 @@
   <v-app>
     <v-main>
       <div class="page-container">
+        <Navigation />
         <NuxtPage />
       </div>
     </v-main>
@@ -17,7 +18,7 @@
   margin: 0 12%;
   max-width: 70vw;
 
-  @include on-media('sm-and-down') {
+  @include on-sm {
     max-width: unset;
     margin: 0 1rem;
   }
