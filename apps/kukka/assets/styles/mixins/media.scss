@@ -19,8 +19,32 @@
   }
 }
 
+@mixin on-sm-down {
+  @include on-media('sm-and-down') {
+    @content;
+  }
+}
+
+@mixin on-sm-up {
+  @include on-media('sm-and-down') {
+    @content;
+  }
+}
+
 @mixin on-md {
   @include on-media('md') {
+    @content;
+  }
+}
+
+@mixin on-md-down {
+  @include on-media('md-and-down') {
+    @content;
+  }
+}
+
+@mixin on-md-up {
+  @include on-media('md-and-up') {
     @content;
   }
 }
@@ -31,8 +55,32 @@
   }
 }
 
+@mixin on-lg-down {
+  @include on-media('lg-and-down') {
+    @content;
+  }
+}
+
+@mixin on-lg-up {
+  @include on-media('lg-and-up') {
+    @content;
+  }
+}
+
 @mixin on-xl {
   @include on-media('xl') {
+    @content;
+  }
+}
+
+@mixin on-xl-down {
+  @include on-media('xl-and-down') {
+    @content;
+  }
+}
+
+@mixin on-xl-up {
+  @include on-media('xl-and-up') {
     @content;
   }
 }
