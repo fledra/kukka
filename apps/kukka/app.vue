@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <v-main>
-      <div class="page-container">
+      <v-container class="page-container">
         <Navigation />
         <NuxtPage />
-      </div>
+      </v-container>
     </v-main>
   </v-app>
 </template>
@@ -13,14 +13,8 @@
 
 <style lang="scss" scoped>
 .page-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 12%;
-  max-width: 70vw;
-
-  @include on-sm {
-    max-width: unset;
-    margin: 0 1rem;
+  @include on-xl-up {
+    max-width: 70vw;
   }
 }
 </style>
