@@ -42,7 +42,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['vuetify-nuxt-module', 'nuxt-icon', '@nuxtjs/google-fonts'],
+  modules: ['vuetify-nuxt-module', '@vueuse/nuxt', '@nuxtjs/google-fonts', 'nuxt-icon'],
 
   vuetify: {
     moduleOptions: {
