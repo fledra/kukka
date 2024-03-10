@@ -1,6 +1,6 @@
-@use './variables';
+@use '@/assets/styles/variables';
 
-@use 'vuetify/settings' with (
+@use 'vuetify' with (
   $color-pack: false,
   $body-font-family: variables.$font-family
 );

@@ -2,6 +2,11 @@
 import { defineVuetifyConfiguration } from 'vuetify-nuxt-module/custom-configuration';
 
 export default defineVuetifyConfiguration({
+  defaults: {
+    global: {
+      color: 'primary',
+    },
+  },
   theme: {
     defaultTheme: 'dark',
     themes: {

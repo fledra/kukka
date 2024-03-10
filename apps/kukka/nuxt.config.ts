@@ -30,11 +30,13 @@ export default defineNuxtConfig({
     },
   },
 
+  css: ['~/assets/styles/vuetify/main.scss'],
+
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@/assets/styles/main" as *;',
+          additionalData: '@use "@/assets/styles/helpers" as *;',
         },
       },
     },
@@ -46,7 +48,7 @@ export default defineNuxtConfig({
     moduleOptions: {
       prefixComposables: true,
       styles: {
-        configFile: 'assets/styles/settings.scss',
+        configFile: 'assets/styles/vuetify/settings.scss',
       },
     },
   },
