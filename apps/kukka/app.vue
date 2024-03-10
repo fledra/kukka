@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <v-container class="page-container">
+      <v-container class="fill-height flex-column page-container">
         <Navigation />
         <NuxtPage />
       </v-container>

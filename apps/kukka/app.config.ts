@@ -2,6 +2,6 @@
 
 export default defineAppConfig({
   nuxtIcon: {
-    size: '1em',
+    size: '1.25em',
   },
 });

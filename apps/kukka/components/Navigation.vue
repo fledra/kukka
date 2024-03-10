@@ -15,11 +15,12 @@ const { smAndUp } = useVDisplay();
 
 <style lang="scss" scoped>
 .navigation {
+  width: 100%;
   height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0.5rem 0 1.25rem;
+  margin: 8px 0 16px;
 
   @include on-xs {
     justify-content: center;
